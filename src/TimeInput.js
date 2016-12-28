@@ -21,6 +21,7 @@ var TimeInput = React.createClass({
     className: React.PropTypes.string,
     value: React.PropTypes.string,
     onChange: React.PropTypes.func,
+    onBlur: React.PropTypes.func,
     defaultValue: React.PropTypes.string
   },
   render () {
@@ -56,8 +57,11 @@ var TimeInput = React.createClass({
     var index = this.state.caretIndex
     if (index || index === 0) caret.set(this.input, index)
   },
-  handleBlur () {
-    if (this.mounted) this.setState({ caretIndex: null })
+  handleBlur (e) {
+    if (this.mounted) {
+      this.setState({ caretIndex: null });
+      this.props.onBlur && this.props.onBlur(e);
+    }
   },
   handleEscape () {
     if (this.mounted) this.input.blur()

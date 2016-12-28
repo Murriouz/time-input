@@ -1,6 +1,6 @@
 {
-  "name": "time-input",
-  "version": "1.3.1",
+  "name": "photonvr-time-input",
+  "version": "1.0.0",
   "description": "A keyboard friendly react component for capturing time",
   "main": "./dist/TimeInput",
   "scripts": {
@@ -9,10 +9,7 @@
     "compile": "NODE_ENV=production babel -d dist/ src/",
     "prepublish": "npm run compile"
   },
-  "author": "Alan Clarke <hi@alz.so> (alz.so)",
-  "contributors": [
-    "Matt Livingston <matt.l.livingston@gmail.com>"
-  ],
+  "author": "Murriouz",
   "license": "UNLICENSED",
   "dependencies": {},
   "devDependencies": {
@@ -67,14 +64,15 @@
     "picker",
     "time",
     "time input",
-    "timepicker"
+    "timepicker",
+    "photonvr"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alanclarke/time-input.git"
+    "url": "git+https://github.com/Muriouz/time-input.git"
   },
   "bugs": {
-    "url": "https://github.com/alanclarke/time-input/issues"
+    "url": "https://github.com/Muriouz/time-input/issues"
   },
-  "homepage": "https://github.com/alanclarke/time-input#readme"
+  "homepage": "https://github.com/Muriouz/time-input#readme"
 }

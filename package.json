@@ -1,6 +1,6 @@
 {
   "name": "photonvr-time-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A keyboard friendly react component for capturing time",
   "main": "./dist/TimeInput",
   "scripts": {
